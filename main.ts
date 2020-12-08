@@ -168,3 +168,24 @@ let mySprite = sprites.create(img`
     ...............ffceec...............
     `, SpriteKind.Food)
 effects.hearts.startScreenEffect(500)
+tiles.setTilemap(tiles.createTilemap(hex`10001000020202020202020202020202020202020201010101010101010101010101010202010404040404040404040404040102020104030707070707070707070601020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c080102020104050a0a0a0a0a0a0a0a0a0901020201010101010101010101010101010202020202020202020202020202020202`, img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, [myTiles.transparency16,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,sprites.castle.tilePath1,sprites.builtin.forestTiles0,sprites.castle.tilePath7,sprites.castle.tilePath3,sprites.castle.tilePath2,sprites.castle.tilePath6,sprites.castle.tilePath9,sprites.castle.tilePath8,sprites.castle.tilePath4,sprites.castle.tilePath5], TileScale.Sixteen))
+effects.clouds.startScreenEffect(500)
+scene.cameraFollowSprite(mySprite)
+game.splash("Hello-Merhaba" + " World-Dünyâ")
