@@ -1,3 +1,6 @@
+namespace SpriteKind {
+    export const Tree = SpriteKind.create()
+}
 music.baDing.play()
 scene.setBackgroundColor(9)
 music.playMelody("C5 A D C A B G E ", 203)
@@ -166,7 +169,7 @@ let mySprite = sprites.create(img`
     ...............feefce...............
     ...............fceeec...............
     ...............ffceec...............
-    `, SpriteKind.Food)
+    `, SpriteKind.Tree)
 effects.hearts.startScreenEffect(500)
 tiles.setTilemap(tiles.createTilemap(hex`10001000020202020202020202020202020202020201010101010101010101010101010202010404040404040404040404040102020104030707070707070707070601020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c0801020201040b0c0c0c0c0c0c0c0c0c080102020104050a0a0a0a0a0a0a0a0a0901020201010101010101010101010101010202020202020202020202020202020202`, img`
     . . . . . . . . . . . . . . . . 
