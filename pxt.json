@@ -1,5 +1,6 @@
 {
     "name": "d1",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "device": "*"
